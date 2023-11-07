@@ -15,5 +15,4 @@
         umur : {{$umur}}
     </p>
 </body>
-
 </html>
