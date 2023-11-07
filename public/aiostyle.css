@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.smooth-vanilla {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.container {
+  scroll-snap-type: mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.one .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  height: 9%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #1c3079;
+}
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.logo {
+  width: 70px;
+  height: 100%;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  margin: 0 8% 0 8%;
+}
+.col {
+  flex-basis: 50%;
+}
+.one h1 {
+  color: white;
+  font-size: 80px;
+}
+.one p {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.one button {
+  width: 30%;
+  height: 50px;
+  border: 1px solid;
+  border-color: white;
+  background: #ffffff;
+  border-radius: 25px;
+  font-size: 14px;
+  color: rgb(55, 55, 55);
+  font-weight: 650;
+  cursor: pointer;
+  outline: none;
+}
+.one button:active {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  transition: 0.2s;
+}
+.about {
+  width: 100%;
+  padding: 78px;
+  background-color: #45508e;
+}
+.about-text {
+  width: 550px;
+}
+.about-text h1 {
+  font-size: 72px;
+  color: azure;
+}
+.about-text h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: azure;
+}
+.about-text p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  color: azure;
+}
+.about img {
+  height: 100vh;
+  width: 420px;
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.three {
+  background-image: url(bg-3.png);
+  width: 100%;
+  height: 100%;
+}
+.center {
+  top: 50%;
+  left: 50%;
+  width: 370px;
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+}
+.center h1 {
+  text-align: center;
+  padding: 15px 0 15px 0;
+  border-bottom: 2px solid rgb(191, 191, 191);
+}
+.center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 17px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  width: 0%;
+  height: 1px;
+  background: #c55f2e;
+  transition: 0.3s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: #c55f2e;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+.pass {
+  margin: 3px 0 20px 0;
+  color: rgb(37, 37, 37);
+  cursor: pointer;
+}
+.pass:hover {
+  text-decoration: none;
+  color: rgb(165, 6, 6);
+  transition: 0.2s;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #d97243;
+  border-radius: 25px;
+  font-size: 18px;
+  color: azure;
+  font-weight: 650;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  background: azure;
+  color: #d97243;
+  transition: 0.3s;
+}
+.buy_token {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+}
+.buy_token a {
+  text-decoration: none;
+  color: rgb(187, 2, 2);
+}
+.buy_token a:hover {
+  font-weight: 600;
+}
+.foru a {
+  text-decoration: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+}
+.content {
+  width: 20%;
+  margin: 35px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px black;
+  transition: 0.4s;
+  background: white;
+}
+.content:hover {
+  box-shadow: 0 3px 6px black;
+  transform: translate(0px, -8px);
+}
+.foru img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.foru p {
+  text-align: center;
+  color: #1c3079;
+  padding-top: 23px;
+  padding-bottom: 20px;
+}
+h6 {
+  font-size: 26px;
+  text-align: center;
+  color: #45508e;
+  margin: 0;
+}
+.foru button {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 19px;
+  border-bottom-left-radius: 19px;
+}
+.buy1 {
+  background: #576cbc;
+}
+.buy2 {
+  background: #576cbc;
+}
+.buy3 {
+  background: #576cbc;
+}
+.linkz{
+    background-color: #313131;
+}
+.tugasz{
+    text-align: center;
+}
+.tugasz a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tugasz a:hover{
+    color: rgb(122, 194, 250);
+    transition: .3s;
+}

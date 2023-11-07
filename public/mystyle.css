@@ -1,0 +1,45 @@
+body{
+    background-color: #F2E8C6;
+    color:#671409 ;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.hargafinal{
+    font-weight: bold;
+    color: #230b7a;
+}
+
+a:link{
+    text-decoration: none;
+    color: #230b7a;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #230b7a;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(147, 102, 34);
+    font-weight: bold;
+}
+
+.profilepicture {
+    border-radius: 50%;
+}
+
+.profilepicture2 {
+    border-radius: 20%;
+}
+
+.photoframe {
+    border-radius: 13%;
+    border: 10px solid #230b7a; /* tebal border dan warna*/
+    padding: 10px; /*jarak isi dengan border */
+    width: 300px; /*jika tidak di set maka 1 halaman*/
+}
+
+.scale-up-center {
+	animation: scale-up-center 2.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                }
