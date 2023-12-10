@@ -13,7 +13,7 @@
 <div class="container p-3 my-3 border">
     <div class="row d-flex align-items-center">
       <div class="col-md-6 d-flex justify-content-center">
-        <img src="https://placehold.it/300x400" class="rounded-rectangle img-thumbnail" alt="Pegawai Photo">
+        <div style="width: 300px; height: 300px; background-color: #ccc;"></div>
       </div>
       <div class="col-md-6">
         <table class="table table-striped">
