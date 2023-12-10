@@ -76,3 +76,11 @@ Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@be
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@storebelanja');
 Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangController@batal');
 
+Route::get('/topi','App\Http\Controllers\topiController@indextopi');
+Route::get('/topi/tambah','App\Http\Controllers\topiController@tambahtopi');
+Route::post('/topi/store','App\Http\Controllers\topiController@storetopi');
+Route::get('/topi/edit/{kodetopi}','App\Http\Controllers\topiController@edittopi');
+Route::post('/topi/update','App\Http\Controllers\topiController@updatetopi');
+Route::get('/topi/hapus/{kodetopi}','App\Http\Controllers\topiController@hapustopi');
+Route::get('/topi/lihat/{kodetopi}','App\Http\Controllers\topiController@lihattopi');
+Route::get('/topi/cari','App\Http\Controllers\topiController@caritopi');
