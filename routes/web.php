@@ -84,3 +84,7 @@ Route::post('/topi/update','App\Http\Controllers\topiController@updatetopi');
 Route::get('/topi/hapus/{kodetopi}','App\Http\Controllers\topiController@hapustopi');
 Route::get('/topi/lihat/{kodetopi}','App\Http\Controllers\topiController@lihattopi');
 Route::get('/topi/cari','App\Http\Controllers\topiController@caritopi');
+
+Route::get('/kategori','App\Http\Controllers\ccController@indexcc');
+Route::get('/kategori/lihat/{Nama}','App\Http\Controllers\ccController@lihatcc');
+Route::post('/kategori/lihat','App\Http\Controllers\ccController@lihat');
